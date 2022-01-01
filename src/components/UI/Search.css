@@ -7,15 +7,15 @@
   background-color: rgba(116, 67, 67, 0.746);
   font-size: 30px;
   width: 100%;
-  overflow: hidden;  
+  overflow: hidden;
 }
 
 .header input {
- position: fixed;
- left: 90px;
- top: 20px;
+  position: fixed;
+  left: 90px;
+  top: 20px;
   text-align: center;
-  border: 2px solid rgba(175, 132, 113, 0.507); 
+  border: 2px solid rgba(175, 132, 113, 0.507);
   box-sizing: content-box;
   margin-top: 30px;
   margin-left: 10px;

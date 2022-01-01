@@ -30,7 +30,8 @@ body .container1 .card1 {
   height: 500px;
   box-shadow: inset 5px 5px 5px rgba(248, 101, 101, 0.2),
     inset -5px -5px 15px rgba(216, 152, 99, 0.1),
-    5px 5px 15px rgba(240, 180, 112, 0.787), -5px -5px 15px rgba(255, 255, 255, 0.1);
+    5px 5px 15px rgba(240, 180, 112, 0.787),
+    -5px -5px 15px rgba(255, 255, 255, 0.1);
   border-radius: 15px;
   margin: 30px;
   transition: 0.5s;
@@ -39,7 +40,6 @@ body .container1 .card1 {
 body .container1 .card1:nth-child(1) .box1 .content1 button {
   background: #eba85c;
 }
-
 
 body .container1 .card1 .box1 {
   position: absolute;
@@ -74,7 +74,6 @@ body .container1 .card1 .box1 .content1 {
   padding: 20px;
   text-align: left;
   margin-left: 50px;
-
 }
 
 body .container1 .card1 .box1 .content1 th {

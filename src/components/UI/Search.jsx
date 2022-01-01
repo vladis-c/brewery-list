@@ -4,7 +4,12 @@ import "./Search.css"
 function Search({ onChange, value }) {
   return (
     <header className="header">
-      <input type="text" placeholder="Search..." onChange={onChange} value={value} />
+      <input
+        type="text"
+        placeholder="Search..."
+        onChange={onChange}
+        value={value}
+      />
     </header>
   )
 }

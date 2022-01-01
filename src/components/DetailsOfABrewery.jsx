@@ -3,7 +3,6 @@ import GoBackButton from "./GoBackButton"
 import "./DetailsOfABrewery.css"
 
 function DetailsOfABrewery({ brewery, onClick }) {
-  
   return (
     <div className="container1">
       <div className="card1">

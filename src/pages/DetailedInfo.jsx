@@ -2,7 +2,6 @@ import React from "react"
 import { useParams, useHistory } from "react-router-dom"
 import DetailsOfABrewery from "../components/DetailsOfABrewery"
 
-
 function DetailedInfo({ data }) {
   const history = useHistory()
 
@@ -16,7 +15,6 @@ function DetailedInfo({ data }) {
   return (
     <div>
       <DetailsOfABrewery brewery={brewery} onClick={goBackButtonHandler} />
-     
     </div>
   )
 }
