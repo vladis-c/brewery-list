@@ -1,0 +1,28 @@
+.header {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  padding: 60px;
+  text-align: center;
+  background-color: rgba(116, 67, 67, 0.746);
+  font-size: 30px;
+  width: 100%;
+  overflow: hidden;  
+}
+
+.header input {
+ position: fixed;
+ left: 90px;
+ top: 20px;
+  text-align: center;
+  border: 2px solid rgba(175, 132, 113, 0.507); 
+  box-sizing: content-box;
+  margin-top: 30px;
+  margin-left: 10px;
+  width: 300px;
+  min-height: 30px;
+  min-width: 10px;
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  margin-bottom: 20px;
+}
