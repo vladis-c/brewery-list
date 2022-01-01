@@ -1,6 +1,20 @@
-# Getting Started with Create React App
+## Project Description
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a pre-assignment to Integrify academy. 
+
+The task was to show:
+
+1.Homepage with some info about the brewery companies. Data fetched from [Brewery API](https://api.openbrewerydb.org/breweries)
+2.Second page opens the detailed data about the company.
+
+In this app some React features are used: Functional React Component, React hooks, React Router. 
+Basic CSS by templates on open sources, modified.
+
+### Functionalities of the app:
+
+On the first page on header user can perform search via city, state, country, street, postal code, name or size of the company. Searched data is filtered live when typing. If nothing is found, user is notificated. User can inspecr more of info of the particular company with clicking on "view details" button under each company description. This leads to the other page corresponding to the chosen company. If any data is absent, field remains empty.
+User can go back to the main page clicking on "go back" button.
+
 
 ## Available Scripts
 
