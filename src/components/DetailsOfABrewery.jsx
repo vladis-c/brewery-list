@@ -1,5 +1,5 @@
 import React from "react"
-import GoBackButton from "./GoBackButton"
+import GoBackButton from "./UI/GoBackButton"
 import "./DetailsOfABrewery.css"
 
 function DetailsOfABrewery({ brewery, onClick }) {
@@ -53,7 +53,7 @@ function DetailsOfABrewery({ brewery, onClick }) {
                 </tr>
               </tbody>
             </table>
-            <GoBackButton onClick={onClick}>GO BACK</GoBackButton>
+            <GoBackButton type="button" onClick={onClick}>GO BACK</GoBackButton>
           </div>
         </div>
       </div>

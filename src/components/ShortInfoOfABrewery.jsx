@@ -26,30 +26,6 @@ function ShortInfoOfABrewery({ data }) {
             </div>
           </div>
         </div>
-
-        // <table className="card" key={key}>
-        //   <tbody>
-        //     <tr>
-        //       <th>Name:</th>
-        //       <td>{el.name}</td>
-        //     </tr>
-        //     <tr>
-        //       <th>Brewery Type:</th>
-        //       <td>{el.brewery_type}</td>
-        //     </tr>
-        //     <tr>
-        //       <th>City:</th>
-        //       <td>{el.city}</td>
-        //     </tr>
-        //   </tbody>
-        //   <tfoot>
-        //     <tr>
-        //       <td>
-        //         <Link className="button" to={`/breweries/${el.id}`}>View Details</Link>
-        //       </td>
-        //     </tr>
-        //   </tfoot>
-        // </table>
       ))}
     </div>
   )

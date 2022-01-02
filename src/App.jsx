@@ -38,7 +38,7 @@ function App() {
     setSearch(event.target.value)
   }
   useEffect(
-    (h) => {
+    () => {
       setSearchData(
         fetchedData.filter(
           (value) =>
@@ -57,8 +57,6 @@ function App() {
     [fetchedData, search]
   )
 
-  /* TODO: If page refreshed on any stage, then data is not fetched. Handle the error*/
-
   return (
     <div>
       {error && <Error />}
@@ -69,7 +67,7 @@ function App() {
         <Route path="/breweries" exact>
           <ShortInfo data={searchData} />
           <Search onChange={handleSearch} value={search} />
-          {searchData.length && !error === 0 ? (
+          {!error && searchData.length === 0 ? (
             <label>Nothing is found</label>
           ) : (
             ""
