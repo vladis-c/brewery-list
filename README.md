@@ -15,6 +15,9 @@ Basic CSS by templates on open sources, modified.
 On the first page on header user can perform search via city, state, country, street, postal code, name or size of the company. Searched data is filtered live when typing. If nothing is found, user is notificated. User can inspect more of info of the particular company with clicking on "view details" button under each company description. This leads to the other page corresponding to the chosen company. If any data is absent, field remains empty.
 User can go back to the main page clicking on "go back" button.
 
+## Deployment
+
+App is deployed and running at [https://vigilant-jones-b2f7fd.netlify.app/](https://vigilant-jones-b2f7fd.netlify.app/)
 
 ## Available Scripts
 
