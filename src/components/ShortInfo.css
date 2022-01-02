@@ -31,7 +31,8 @@ body .container .card {
   height: 440px;
   box-shadow: inset 5px 5px 5px rgba(248, 101, 101, 0.2),
     inset -5px -5px 15px rgba(216, 152, 99, 0.1),
-    5px 5px 15px rgba(240, 180, 112, 0.787), -5px -5px 15px rgba(255, 255, 255, 0.1);
+    5px 5px 15px rgba(240, 180, 112, 0.787),
+    -5px -5px 15px rgba(255, 255, 255, 0.1);
   border-radius: 15px;
   margin: 30px;
   transition: 0.5s;
@@ -40,14 +41,6 @@ body .container .card {
 body .container .card:nth-child(1) .box .content a {
   background: #eba85c;
 }
-
-/* body .container .card:nth-child(2) .box .content a {
-  background: #e91e63;
-}
-
-body .container .card:nth-child(3) .box .content a {
-  background: #23c186;
-} */
 
 body .container .card .box {
   position: absolute;
@@ -83,7 +76,6 @@ body .container .card .box .content {
   text-align: center;
 }
 
-
 body .container .card .box .content h3 {
   font-size: 16px;
   color: #fff;
@@ -118,4 +110,3 @@ body .container .card .box .content a:hover {
   background: #fff;
   color: #000;
 }
-
