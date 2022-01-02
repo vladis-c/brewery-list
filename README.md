@@ -7,7 +7,7 @@ The task was to show:
 1.Homepage with some info about the brewery companies. Data fetched from [Brewery API](https://api.openbrewerydb.org/breweries)
 2.Second page opens the detailed data about the company.
 
-In this app some React features are used: Functional React Component, React hooks, React Router. 
+In this app some React features are used: Functional React Component, React hooks (useState, useEffect), React Router (useParams, useHistory). 
 Basic CSS by templates on open sources, modified.
 
 ### Functionalities of the app:
