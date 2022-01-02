@@ -1,6 +1,6 @@
 import axios from "axios"
 import { useState, useEffect } from "react"
-import { Route, Switch, Redirect } from "react-router-dom"
+import { Route, Switch } from "react-router-dom"
 import Error from "./components/UI/Error"
 import Search from "./components/UI/Search"
 import DetailedInfo from "./pages/DetailedInfo"
@@ -62,8 +62,7 @@ function App() {
   return (
     <div>
       {error && <Error />}
-      <Switch>
-        
+      <Switch>        
         <Route path="/" exact>
           <ShortInfo data={searchData} clearSearch={clearSearch} />
           <Search onChange={handleSearch} value={search} />
