@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "react-router-dom"
 import "./ShortInfo.css"
 
-function ShortInfoOfABrewery({ data }) {
+function ShortInfoOfABrewery({ data, clearSearch }) {
   return (
     <div>
       {data.map((el, key) => (
@@ -21,7 +21,9 @@ function ShortInfoOfABrewery({ data }) {
                 </h3>
                 <h4>Brewery Type:</h4>
                 <p>{el.brewery_type}</p>
-                <Link to={`/breweries/${el.id}`}>View Details</Link>
+                <Link to={`/breweries/${el.id}`} onClick={clearSearch}>
+                  View Details
+                </Link>
               </div>
             </div>
           </div>

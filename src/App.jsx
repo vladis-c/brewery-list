@@ -18,7 +18,6 @@ function App() {
       .get("https://api.openbrewerydb.org/breweries")
       .then((res) => {
         const dataArray = res.data
-        console.log(dataArray)
         setError(false)
         setFetchedData(dataArray)
       })
@@ -30,32 +29,35 @@ function App() {
         } else {
           setError(true)
         }
-        console.log(error)
       })
   }, [error])
 
   function handleSearch(event) {
     setSearch(event.target.value)
   }
-  useEffect(
-    () => {
-      setSearchData(
-        fetchedData.filter(
-          (value) =>
-            value.name?.toLowerCase().includes(search.toLowerCase()) ||
-            value.postal_code
-              ?.toString()
-              .toLowerCase()
-              .includes(search.toLowerCase()) ||
-            value.city?.toLowerCase().includes(search.toLowerCase()) ||
-            value.brewery_type?.toLowerCase().includes(search.toLowerCase()) ||
-            value.state?.toLowerCase().includes(search.toLowerCase()) ||
-            value.country?.toLowerCase().includes(search.toLowerCase())
-        )
+  useEffect(() => {
+    setSearchData(
+      fetchedData.filter(
+        (value) =>
+          value.name?.toLowerCase().includes(search.toLowerCase()) ||
+          value.postal_code
+            ?.toString()
+            .toLowerCase()
+            .includes(search.toLowerCase()) ||
+          value.city?.toLowerCase().includes(search.toLowerCase()) ||
+          value.brewery_type?.toLowerCase().includes(search.toLowerCase()) ||
+          value.state?.toLowerCase().includes(search.toLowerCase()) ||
+          value.country?.toLowerCase().includes(search.toLowerCase())
       )
-    },
-    [fetchedData, search]
-  )
+    )
+  }, [fetchedData, search])
+
+  function clearSearch() {
+    if (search !== "") {
+      setSearch("")
+      setSearchData([])
+    }
+  }
 
   return (
     <div>
@@ -65,7 +67,7 @@ function App() {
           <Redirect to="/breweries" />
         </Route>
         <Route path="/breweries" exact>
-          <ShortInfo data={searchData} />
+          <ShortInfo data={searchData} clearSearch={clearSearch} />
           <Search onChange={handleSearch} value={search} />
           {!error && searchData.length === 0 ? (
             <label>Nothing is found</label>
