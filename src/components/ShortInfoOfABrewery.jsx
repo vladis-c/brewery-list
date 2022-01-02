@@ -10,7 +10,7 @@ function ShortInfoOfABrewery({ data, clearSearch }) {
           <div className="card">
             <div className="box">
               <div className="content">
-                Brewing Company
+                <h4>Brewing Company's</h4>
                 <h4>Name:</h4>
                 <h3>{el.name}</h3>
                 <h4>Location:</h4>
