@@ -63,10 +63,8 @@ function App() {
     <div>
       {error && <Error />}
       <Switch>
+        
         <Route path="/" exact>
-          <Redirect to="/breweries" />
-        </Route>
-        <Route path="/breweries" exact>
           <ShortInfo data={searchData} clearSearch={clearSearch} />
           <Search onChange={handleSearch} value={search} />
           {!error && searchData.length === 0 ? (
@@ -75,7 +73,7 @@ function App() {
             ""
           )}
         </Route>
-        <Route path="/breweries/:breweryId">
+        <Route path="/:breweryId">
           <DetailedInfo data={fetchedData} />
         </Route>
         <Route path="*">

@@ -21,7 +21,7 @@ function ShortInfoOfABrewery({ data, clearSearch }) {
                 </h3>
                 <h4>Brewery Type:</h4>
                 <p>{el.brewery_type}</p>
-                <Link to={`/breweries/${el.id}`} onClick={clearSearch}>
+                <Link to={`/${el.id}`} onClick={clearSearch}>
                   View Details
                 </Link>
               </div>

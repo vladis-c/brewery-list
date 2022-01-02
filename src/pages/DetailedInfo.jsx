@@ -6,7 +6,7 @@ function DetailedInfo({ data }) {
   const history = useHistory()
 
   function goBackButtonHandler() {
-    history.push("/breweries")
+    history.push("/")
   }
 
   const params = useParams()
